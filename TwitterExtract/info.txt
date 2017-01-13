@@ -1,0 +1,7 @@
+Extract random tweets in Spanish from Twitter API.
+
+How to use:
+- Twitter API credentials are required, and they need to be added at the beginning of the random_tweets.py script.
+
+python random_tweets.py 1000 > tweets.txt
+python get_tweets_info.py

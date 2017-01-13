@@ -1,0 +1,53 @@
+   
+   This directory contains multiple programs related to the "corrector" 
+   module. You can compile the programs using the command "make".
+   
+   
+   === word_vec ===
+   
+   This program can be used to test a word embeddings model.
+   
+   Usage:
+     ./word_vec model-file
+     
+   Where model files and more info about them can be found at 
+   "model_files" folder.
+   
+   
+   === corrector ===
+   
+   This program reads sentences and tries to correct the ortographic 
+   mistakes that finds.
+   
+   Usage:
+     ./corrector config-file
+     
+   Where configuration files can be found at "config" folder.
+   
+   
+   === evaluate ===
+   
+   Uses sentences with their corrections anotated to evaluate the
+   performance of the "corrector" module.
+   
+   The format used is:
+   >> sentence
+   >> incorrect_word1 correction1 , incorrect_word2 correction2 , ...
+   
+   When "EXIT" is entered, the program prints the results and exits.
+   
+   Usage:
+     ./evaluate config-file
+     
+   Where configuration files can be found at "config" folder.
+   
+   === convert_model ===
+   
+   This program can be used to convert word embedding models from
+   .bin to .words format or the other way around. Conversion is
+   automatically done based on the model file extension.
+   
+   Usage:
+     ./convert_model model-file
+   
+   
